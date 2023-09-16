@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Cardo&family=Rancho&family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    background-color: #FFB7B7;
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Black Ops One', cursive;
+    font-family: 'Cardo', serif;
+    font-family: 'Rancho', cursive;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#pannel {
+    width: 70%;
+    height: 60%;
+    background-color: transparent;
+    
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid transparent ;
+}
+
+#ptop {
+    border-radius: 20px 20px 0 0;
+    height: 15%;
+    background-color: #69c6ff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#pbtm {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 85%;
+    border-radius: 0 0 20px 20px;
+}
+
+.elem {
+    display: flex;
+    color: #FFF5E0;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.elem .box {
+    padding: 5px;
+    background-color: #2f50c7;
+    width: 50px;
+    height: inherit;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 19px;
+}
+
+.bubble {
+    display: flex;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #25bbae;
+    align-items: center;
+    justify-content: center;
+    
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    margin: 5px;
+}
+
+.bubble:hover {
+    background-color: #69c6ff;
+    color: #141E46;
+}
+
+.gameOver {
+    font-size: 70px;
+    color: #141E46;
+    transition: all ease 0.5s;
+    margin: auto;
+}
+
+@media (max-width:1000px) {
+    #ptop {
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    #pbtm {
+        align-items: center;
+        margin-top: 10px;
+    }
+    
+    #pannel {
+        width: 78%;
+        height: 92%;
+    }
+    
+    .elem {
+        font-size: 10px;
+    }
+    
+    .elem .box {
+        font-size: 14px;
+        width: 40px;
+    }
+    
+    .gameOver {
+        margin: auto;
+        font-size: 40px;
+        transition: all ease 0.5s;
+    }
+    .bubble {
+        width: 38px;
+        height: 38px;
+
+    }
+
+}
